@@ -1,0 +1,25 @@
+.button {
+  background-color: #008fd1;
+  color: white;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .entry {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .entry {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
