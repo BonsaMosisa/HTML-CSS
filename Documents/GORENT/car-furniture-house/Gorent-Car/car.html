@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="car.css" />
+
+    <title>Gorent - Car</title>
+  </head>
+  <body>
+    <main>
+      <section class="car-section">
+        <p class="car-head">Find the Perfect Car for Your Journey</p>
+        <div class="car-page-container">
+          <div class="filter-side">
+            <p class="filter-header"><b>FIND YOUR MATCH</b></p>
+            <form action="#">
+              <label for="price">Max</label>
+              <input
+                class="price-filter"
+                type="number"
+                id="price"
+                placeholder="Maximum"
+              />
+              <label for="price"> Min</label>
+              <input
+                class="price-filter"
+                type="number"
+                id="price"
+                placeholder="Minimum"
+              />
+            </form>
+            <div>
+              <label for="city">City</label>
+              <br />
+              <select name="city-list" id="city">
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Jimma">Jimma</option>
+                <option value="Jimma">Adama</option>
+                <option value="Bahir Dar">Bahir Dar</option>
+                <option value="Nekemte">Nekemte</option>
+                <option value="Hawassa">Hawassa</option>
+                <option value="Dire Dawa">Dire Dawa</option>
+                <option value="Jigjiga">Jigjiga</option>
+                <option value="Mekele">Mekele</option>
+                <option value="Mekele">Ambo</option>
+                <option value="Mekele">Lega Tafo</option>
+              </select>
+            </div>
+            <p class="price">PRICE TYPE</p>
+
+            <input type="radio" name="price" id="price-type" vlaue="fixed" />
+            <label for="price-type">Fixed</label>
+            <input
+              type="radio"
+              name="price"
+              id="price-type"
+              value="Negotiable"
+            />
+            <label for="price-type-filter">Negotiable</label>
+
+            <input class="submit-filter" type="submit" value="FIND" />
+          </div>
+          <div class="car-container">
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-Img/car1.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Apartment</p>
+                  <p class="car-price">20000 ETB/ Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Addis Ababa, Bole</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-img/car13.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Bz4x 2024</p>
+                  <p class="car-price">8000 ETB/Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Adama, Bole</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-img/car3.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Corolla 2022</p>
+                  <p class="car-price">3500 ETB/ Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Jimma</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-Img/car4.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Corolla 2016</p>
+                  <p class="car-price">3000 ETB/ Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Hawassa</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p class="show-phone">SHOW PHONE</p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-Img/car5.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Hilux - One get</p>
+                  <p class="car-price">4000 ETB/Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Addis Ababa, Gulele</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-Img/car6.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Yaris 2021</p>
+                  <p class="car-price">3500 ETB/ Day</p>
+                  <p class="price-type">Negotiable</p>
+                  <p class="car-address">Bahir Dar, 07</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-Img/car16.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Mercedes-Benz EQC 2024</p>
+                  <p class="car-price">7000 ETB/ Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Addis Ababa, Kolfe</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-Img/car8.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Vitz</p>
+                  <p class="car-price">2500 ETB/ Day</p>
+                  <p class="price-type">Negotiable</p>
+                  <p class="car-address">Nekemte</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-img/car10.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Bz4x 2024</p>
+                  <p class="car-price">8000 ETB/Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Adama, Bole</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-img/car9.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Bz4x 2024</p>
+                  <p class="car-price">8000 ETB/Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Adama, Bole</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-img/car12.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Bz4x 2024</p>
+                  <p class="car-price">8000 ETB/Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Adama, Bole</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="car-box">
+              <div class="car">
+                <img class="car-img" src="car-img/car14.jpg" alt="" />
+                <div class="div car-explanation">
+                  <p class="car-title">Toyota Bz4x 2024</p>
+                  <p class="car-price">8000 ETB/Day</p>
+                  <p class="price-type">Fixed</p>
+                  <p class="car-address">Adama, Bole</p>
+                </div>
+                <div class="saved-phone-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="saved-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                    />
+                  </svg>
+                  <p
+                    class="show-phone"
+                    id="toggleText"
+                    onclick="toggleContent()"
+                  >
+                    SHOW PHONE
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

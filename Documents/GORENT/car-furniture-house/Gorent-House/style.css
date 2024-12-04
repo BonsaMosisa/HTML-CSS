@@ -1,0 +1,210 @@
+/* 
+#000B58
+#003161
+#D4EBF8
+#006A67
+#FFF4B7
+#d66911
+*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e9e9e9;
+  font-family: Arial, "Geologica", Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+/* }++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* HOUSE SECTION */
+/* ++++++++++++++++++++++++++++++++++++++++++ */
+
+.house-section {
+  max-width: 130rem;
+  margin: 1rem auto;
+}
+.house-head {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 3rem;
+  margin-left: 4rem;
+  padding: 1rem;
+  background-color: #ff831d;
+  background-image: linear-gradient(to right bottom, #eb6e00, #ffae00);
+  color: #fff;
+  border-radius: 0.6rem;
+}
+.house-page-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.2rem;
+}
+.house-container {
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+  padding: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.house-box {
+  background-color: #fff;
+  width: 22rem;
+  border-radius: 1.5rem;
+
+  overflow: hidden;
+  flex: 1 1 calc(25% - 1rem); /* 4 columns with space in between */
+  min-width: 22rem;
+  max-width: 22rem; /* Ensure a consistent card size */
+}
+
+.house-box:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.126);
+
+  transition: all 0.2s;
+}
+.house-img {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 0.8rem;
+  margin-bottom: 0;
+}
+.house-img:hover {
+  border-radius: 2rem;
+  padding: 1rem;
+
+  transition: all 0.2s;
+}
+
+.house-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.house-price {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  color: #d66911;
+  margin: 0.5rem;
+}
+.house-address {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.price-type {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+  font-weight: 600;
+  color: #003161;
+  text-align: center;
+}
+.saved-phone-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.6rem;
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+}
+.saved-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.show-phone {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #d66911;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.show-phone.clicked {
+  background-color: #003161; /* Change background to red when clicked */
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FITER ASIDE */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.filter-side {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  padding: 4rem 4rem;
+  justify-content: center;
+  /* background-color: #003161; */
+  background-image: linear-gradient(to bottom, #003161, #30b3ff);
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.filter-header {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+.price {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+label {
+  font-size: 1.6rem;
+}
+input {
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+}
+select {
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  background-color: #d66911;
+  width: 18rem;
+  font-weight: 500;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+option {
+  cursor: pointer;
+}
+
+.submit-filter {
+  color: #fff;
+  background-color: #d66911;
+  width: 20rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+input[type="text"],
+input[type="number"] {
+  border: 0.2rem solid #c5d6ffac; /* Change border color */
+  /* border-radius: 1rem; Rounded corners */
+  padding: 0.5rem; /*Add padding inside input*/
+  outline: none; /* Remove default outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #ff831d; /* Change border color on focus */
+  /* Add shadow effect */
+}
